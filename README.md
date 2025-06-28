@@ -26,11 +26,11 @@ After logging in to your LibreNMS server CLI:
 - Go to your home dir:<br/>
 `cd ~/`
 - Clone this repository into your home dir:<br/>
-`git clone https://gitlab.com/jackgreyhat/librenms-speedtest.git`
+`git clone https://github.com/gitterdoneplease/librenms-speedtest-NG.git`
 - Create the plugin directory into LibreNMS plugin folder:<br/>
 `mkdir /opt/librenms/html/plugins/Speedtest`
 - Copy the LibreNMS speedtest plugin contents into the newly created directory:<br/>
-`cp -r ~/librenms-speedtest/. /opt/librenms/html/plugins/Speedtest`
+`cp -r ~/librenms-speedtest-NG/. /opt/librenms/html/plugins/Speedtest`
 - Ensure correct ownership and permissions on the Speedtest plugin directory and files:<br/>
 `chown -R librenms:librenms /opt/librenms/html/plugins/Speedtest`<br/>
 # Directories: owner rwx, group rx (750)
