@@ -33,6 +33,8 @@ After logging in to your LibreNMS server CLI:
 `cp -r ~/librenms-speedtest/. /opt/librenms/html/plugins/Speedtest`
 - Ensure correct ownership and permissions on the Speedtest plugin directory and files:<br/>
 `chown -R librenms:librenms /opt/librenms/html/plugins/Speedtest`<br/>
+- Add www-data user to librenms group:<br/>
+`adduser www-data librenms`<br/>
 # Directories: owner rwx, group rx (750)
 find /opt/librenms/html/plugins/Speedtest -type d -exec chmod 750 {} \;
 # Files: owner rw, group r (640)
